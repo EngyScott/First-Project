@@ -1,0 +1,21 @@
+/* body{
+    padding: 70px;
+} */
+
+.nav-items{
+    list-style: none;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+a{
+    text-decoration: none;
+}
+
+.row{
+    display: inline-block;
+}
+
+#first-row{
+    width: 100%;
+}
