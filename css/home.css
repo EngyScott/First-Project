@@ -16,8 +16,8 @@ body{
   margin: 0;
   /* height: 600px; */
   width: 100%;
-  padding: 10px 0 20px;
-  background-color: #fff;
+  padding: 0;
+  background-color: #fff !important;
   min-height: 50px;
   display: block;
   text-transform: uppercase;
@@ -29,41 +29,65 @@ body{
 
 
 div {
-  display: block;
+  display: inline-block;
 }
 
 nav{
   display: flex;
-  justify-content: space-between;
+  flex-wrap: nowrap;
+  justify-content: space-around;
   align-content: center;
   width: 100%;
   margin: 0;
   padding: 0 auto;
   justify-content: space-around;
   align-content: center;
+  line-height: 1px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #000;
+  background-color: #fff;
 }
 
 h1>a.navbar-brand{
   font-family: 'Literata', serif;
-  font-size: 1rem;
+  font-size: 1.3rem;
   letter-spacing: 1px;
-  color: #FF5733;
+  color: #FF5733 !important;
   margin: 0;
   padding: 0;
 }
 
 input, textarea {
-  font-size: 9px;
+  font-size: 100%;
   line-height: .8px;
-  
+  background-color: #fff;
+  color: #000;
+
 }
 
-input[type=seach] {
+input.navbar-item :focus,
+textarea.navbar-item :focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: none;
+    font-weight: bold;
+    border: 1px solid gray;
+    outline-width: 0
+}
+
+input.navbar-item {
   font-family: 'Quicksand', sans-serif;
-  color: #000;
+  color: #000 !important;
   box-sizing: border-box;
+  list-style: none;
   border: none;
-  border-bottom: 1px solid #eee;;
+  border-bottom: 1px solid #eee;
+}
+
+input.navbar-item{
+  --focus: none;
 }
 
 nav ul {
@@ -74,24 +98,37 @@ nav ul {
 nav li {
   display: inline;
   text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  justify-items: center;
 }
 
-nav>li>a{
+nav a{
   text-decoration: none;
-  color: #000;
+  color: #000 !important;
   font-weight: 700px;
-  font-size: 14px;
+  font-size: 11px;
   justify-content: space-around;
+  outline: none;
+}
+
+nav a:link {
+  color: #000 !important;
+}
+
+nav a:hover {
+  text-decoration: none !important;     
+  color: #D80E0E !important;
 }
 
 .container{
   padding: 0 15px;
-  /* max-width: 1200px; */
   margin: 0 auto;
 }
 
 .fixed-top-2 {
   margin-top: 56px;
+  padding: 0 35px;
 }
 
 button.navbar-item{
@@ -110,9 +147,32 @@ a.navbar-item[type=submit]>li{
   color: #ef423e;
 }
 
+i.fas{
+  margin: 5px 15px;
+}
 
+.fa-search{
+  color: #555;
+}
 
+.fa-shopping-bag{
+  color: #ef423e;
+}
+
+a.login{
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+  color: #000;
+}
 
 .main{
   margin-top: 100px;
+}
+
+
+@media{
+
 }
