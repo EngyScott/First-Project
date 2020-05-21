@@ -18,50 +18,102 @@
 <body>
     <!--HEADER START-->
     <header class="page-header fixed-top" role="banner">
-        <!-- <div class="container">  -->
-            <!--NAVBAR1 START-->
-            <nav class="navbar navbar-toggleable-md navbar-expand-md  sticky-top sticky-top-2 justify-content-center">
-                <div class="container">
+        <div class="container">
                     
-                    <div class='nav nav-items nav-left'>
-                        <a class="navbar-item text-left" type="submit">
-                            <span><i class="fas fa-search fa-lg"></i></span>
-                        </a>
-                        <input class="navbar-item" type="text" placeholder="SERCH" aria-label="Search">
-                    </div>
-                    <h1><a class="navbar-brand" href="#">Floral</a></h1>
-                    <div class='nav nav-items nav-right'>
-                        <a class="navbar-item login" href="#">LogIn</a>
-                        <a class="navbar-item" type="submit">
-                            <span><i class="fas fa-shopping-bag fa-lg"></i></span>
-                        </a>
-                    </div>
-                    
-                </div> <!--SECTIONN ONE 1 OF HEADER-->           
-            </nav>
+            <div class="grid-full">
+            
+                <div class='grid-item one-third text-left'>
+                    <a type="submit" class="medium-hide">
+                        <span><i class="fas fa-search fa-lg"></i></span>
+                    </a>
+                    <input class="navbar-item medium-hide" type="text" placeholder="SEARCH" aria-label="Search">
+                </div>
+                <h1><a class="grid-item one-third navbar-brand" href="#">Floral</a></h1>
+                <div class='grid-item one-third text-right'>
+                    <a class="navbar-item login medium-hide" href="#">LogIn</a>
+                    <a class="navbar-item" type="submit">
+                        <span><i class="fas fa-shopping-bag fa-lg"></i></span>
+                    </a>
+                </div>
+                
+            </div> <!--SECTIONN ONE 1 OF HEADER-->   
 
               <!--NAVBAR2 START-->
-            <nav class="navbar navbar-toggleable-md navbar-expand-md  sticky-top justify-content-center">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="container"><!--SECTIONN TWO 2 OF HEADER-->
-                    <div class="collapse navbar-collapse id="collapsibleNavbar">
-                        <ul class='navbar-nav nav-items nav-justified'>
-                            <li class='nav-link'><a href="#">New</a></li>
-                            <li class='nav-link'><a href="#">Silk Flowers</a></li>
-                            <li class='nav-link'><a href="#">artificial plants</a></li>
-                            <li class='nav-link'><a href="#">Dried Flowers</a></li>
-                            <li class='nav-link'><a href="#">live plants</a></li>
-                            <li class='nav-link'><a href="#">planters & vases</a></li>
-                            <li class='nav-link'><a href="#">supplies</a></li>
-                            <li class='nav-link'><a href="#">clearence</a></li>
-                        </ul> 
-                    </div>
-                </div><!--SECTIONN TWO 2 OF HEADER CONTAINER-->
+            <nav class="navbar navbar-toggleable-md navbar-expand-md sticky-top justify-content-center mr-auto ml-auto">
+                <div class="container-fluid">
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="container"><!--SECTIONN TWO 2 OF HEADER-->
+                        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                            <ul class='navbar-nav nav-items nav-justified'>
+                                <li class='nav-link'><a href="#">New</a></li>
+                                <li class='nav-link dropdown'>
+                                    <a href="#">Silk Flowers</a>
+                                    <div class="dropdown-container wide-menu">
+                                        <ul class="dropdown-menu">
+                                                                                           
+                                            <li class="dropdown-item"><a href="/collections/artificial-flowers-fake-flowers-all-silk-flowers" class="nav-link">All Silk Flowers</a></li>
+                                                             
+                                            <li class="dropdown-item"><a href="/pages/shop-by-color" class="nav-link">Flowers By Color</a></li>
+                                                             
+                                            <li class="dropdown-item"><a href="/collections/silk-flowers-branches" class="nav-link">Spring Branches &amp; Blooms</a></li>
+                                                           
+                                            <li class="dropdown-item"><a href="/collections/silk-flowers-artificial-flowers-anemones" class="nav-link">Anemones &amp; Poppies</a></li>
+                                                             
+                                            <li class="dropdown-item"><a href="/collections/silk-wedding-flowers-silk-wedding-bouquets" class="nav-link">Bouquets</a></li>
+                                                           
+                                            <li class="dropdown-item"><a href="/collections/silk-flowers-calla-lily-lilies" class="nav-link">Calla Lilies &amp; Lilies</a></li>
+                                                          
+                                            <li class="dropdown-item"><a href="/collections/silk-flowers-dahlia" class="nav-link">Dahlia</a></li>
+                                                            
+                                            <li class="dropdown-item"><a href="/pages/fall-and-holiday-flowers-and-decor" class="nav-link">Fall &amp; Holiday</a></li>
+                                                           
+                                            <li class="dropdown-item"><a href="/collections/silk-flowers-artificial-flowers-fake-flowers-berry-sprays" class="nav-link">Filler Flowers &amp; Berries</a></li>
+                                                         
+                                            <li class="dropdown-item"><a href="/collections/silk-flowers-bushes" class="nav-link">Flower Bushes</a></li>
+                                                          
+                                            <li class="dropdown-item"><a href="/collections/silk-flowers-garlands-wreath" class="nav-link">Garlands &amp; Wreaths</a></li>
+                                                          
+                                            <li class="dropdown-item"><a href="/collections/silk-flowers-hydrangeas" class="nav-link">Hydrangeas</a></li>
+                                                           
+                                            <li class="dropdown-item"><a href="/collections/misc-silk-flower-stems" class="nav-link">Miscellaneous Stems</a></li>
+                                                         
+                                            <li class="dropdown-item"><a href="/collections/silk-flowers-orchids-tropical-flowers" class="nav-link">Orchids &amp; Tropical</a></li>
+                                                           
+                                            <li class="dropdown-item"><a href="/collections/silk-plants-outdoor-artificial-flowers" class="nav-link">Outdoor Artificial Flowers</a></li>
+                                                      
+                                            <li class="dropdown-item"><a href="/collections/silk-flowers-peony" class="nav-link">Peony</a></li>
+                                                      
+                                            <li class="dropdown-item"><a href="/collections/silk-flowers-ranunculus" class="nav-link">Ranunculus</a></li>
+                                                        
+                                            <li class="dropdown-item"><a href="/collections/silk-flowers-real-touch-flowers" class="nav-link">Real Touch Flowers</a></li>
+                                                        
+                                            <li class="dropdown-item"><a href="/collections/silk-flowers-roses" class="nav-link">Roses</a></li>
+                                                     
+                                            <li class="dropdown-item"><a href="/collections/floral-arrangements" class="nav-link">Silk Flower Arrangements</a></li>
+                            
+                                            <li class="dropdown-item"><a href="/collections/diy-silk-wedding-flowers" class="nav-link">Wedding Faux Flowers</a></li>
+                                                                                      
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class='nav-link'><a href="#">artificial plants</a></li>
+                                <li class='nav-link'><a href="#">Dried Flowers</a></li>
+                                <li class='nav-link'><a href="#">live plants</a></li>
+                                <li class='nav-link'><a href="#">planters & vases</a></li>
+                                <li class='nav-link'><a href="#">supplies</a></li>
+                                <li class='nav-link'><a href="#">clearence</a></li>
+                            </ul> 
+                        </div>
+                    </div><!--SECTIONN TWO 2 OF HEADER CONTAINER-->
+
+                </div>
+               
             </nav>
             <!--NAVBAR END-->
-        <!--</div> <!--header container-->
+        </div> <!--header container-->
     </header>
     <!--HEADER END-->
     

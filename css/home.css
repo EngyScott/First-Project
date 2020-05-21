@@ -28,9 +28,15 @@ body{
 }
 
 
-div {
-  display: inline-block;
+div.grid-full {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-content: center;
+  justify-items: center;
+  align-items: baseline;
 }
+
 
 nav{
   display: flex;
@@ -38,24 +44,34 @@ nav{
   justify-content: space-around;
   align-content: center;
   width: 100%;
-  margin: 0;
+  margin: 0 auto;
   padding: 0 auto;
   justify-content: space-around;
   align-content: center;
   line-height: 1px;
-  letter-spacing: 1px;
+  letter-spacing: 0.0.5px;
   text-transform: uppercase;
   color: #000;
   background-color: #fff;
+  justify-items: center;
+  align-items: baseline;
+  text-align: center;
+  font-family: "Proxima Nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
 
 h1>a.navbar-brand{
   font-family: 'Literata', serif;
-  font-size: 1.3rem;
   letter-spacing: 1px;
-  color: #FF5733 !important;
+  color: #ef423e !important;
   margin: 0;
   padding: 0;
+}
+
+h1{
+  line-height: 1.2em;
+  font-size: 1.38462em;
 }
 
 input, textarea {
@@ -90,15 +106,19 @@ input.navbar-item{
   --focus: none;
 }
 
-nav ul {
+ul {
   /* padding-top: 0; */
   list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: baseline;
+  justify-items: stretch;
 }
 
-nav li {
-  display: inline;
-  text-align: center;
-  font-size: 11px;
+li.nav-link {
+  display: inline-flex;
+  font-size: 12px;
   font-weight: 600;
   justify-items: center;
 }
@@ -106,10 +126,10 @@ nav li {
 nav a{
   text-decoration: none;
   color: #000 !important;
-  font-weight: 700px;
-  font-size: 11px;
+  font-size: 0.92308em;
   justify-content: space-around;
   outline: none;
+  padding: 14px 14px;
 }
 
 nav a:link {
@@ -118,7 +138,7 @@ nav a:link {
 
 nav a:hover {
   text-decoration: none !important;     
-  color: #D80E0E !important;
+  color: #ef423e !important;
 }
 
 .container{
@@ -126,24 +146,19 @@ nav a:hover {
   margin: 0 auto;
 }
 
-.fixed-top-2 {
-  margin-top: 56px;
-  padding: 0 35px;
-}
-
-button.navbar-item{
+/* button.navbar-item{
   box-sizing: border-box;
   border: none;
   background-color: transparent;
   line-height: inherit;
   margin: 0;
   padding: 0;
-}
+} */
 
 a.navbar-item[type=submit]>li{
   position: relative;
   top: 2px;
-  font-size: 20px;
+  font-size: 1.25em;
   color: #ef423e;
 }
 
@@ -162,10 +177,21 @@ i.fas{
 a.login{
   font-family: inherit;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 10px;
   line-height: 1.5;
   text-align: center;
   color: #000;
+}
+
+.dropdown:hover .dropdown-menu {display: block;}
+
+.dropdown-container{
+  height: auto;
+}
+
+.wide-menu{
+  width: 100%;
+  height:;
 }
 
 .main{
@@ -173,6 +199,48 @@ a.login{
 }
 
 
-@media{
+@media screen and (min-width: 768px) {
+  /* .medium-hide{
+    display: none;
+  } */
 
 }
+
+@media screen and (max-width: 768px) {
+  .medium-show{
+    display: inline-block;
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
