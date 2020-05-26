@@ -1,5 +1,6 @@
 body{
   margin-top: 100px;
+  padding: 0;
   font-size: 13px;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -16,7 +17,7 @@ body{
   margin: 0;
   /* height: 600px; */
   width: 100%;
-  padding: 0;
+  padding: 0 2.846em;
   background-color: #fff !important;
   min-height: 50px;
   display: block;
@@ -24,14 +25,14 @@ body{
   border-bottom: 1px solid #eee;
   font-family: 'Quicksand', sans-serif;
   text-align: center;
-  font-size: 0.6rem;
+  font-size: 13px;
 }
 
 
 div.grid-full {
   display: flex;
   flex-flow: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-content: center;
   justify-items: center;
   align-items: baseline;
@@ -45,14 +46,12 @@ nav{
   align-content: center;
   width: 100%;
   margin: 0 auto;
-  padding: 0 auto;
-  line-height: 1px;
+  padding: 0;
+  line-height: 0.5px;
   letter-spacing: 0.5px;
-  text-transform: uppercase;
   color: #000;
   background-color: #fff;
-  justify-items: center;
-  align-items: baseline;
+ 
   text-align: center;
   font-family: "Proxima Nova","Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 600;
@@ -65,12 +64,13 @@ h1>a.navbar-brand{
   color: #ef423e !important;
   margin: 0;
   padding: 0;
+  font-size: 24px;
 }
 
-h1{
+/* h1{
   line-height: 1.2em;
   font-size: 1.38462em;
-}
+} */
 
 input, textarea {
   font-size: 100%;
@@ -98,49 +98,32 @@ input.navbar-item {
   list-style: none;
   border: none;
   border-bottom: 1px solid #eee;
+ 
 }
 
-input.navbar-item{
-  --focus: none;
-}
-
-ul {
-  /* padding-top: 0; */
-  list-style-type: none;
-  display: flex;
-  justify-content: space-around;
-  align-content: center;
-  align-items: baseline;
-  justify-items: stretch;
-}
-
-li.nav-link {
+a.nav-link {
   display: inline-flex;
   font-size: 12px;
   font-weight: 600;
   justify-items: center;
   margin: 0;
   padding: 0 !important;
-}
-
-nav a{
   text-decoration: none;
   color: #000 !important;
-  font-size: 0.92308em;
-  justify-content: space-around;
+  font-size: 11px;
   outline: none;
-  padding: 14px 14px;
-  justify-items: center;
   align-items: center;
 }
 
-nav a:link {
-  color: #000 !important;
-}
 
 nav a:hover {
   text-decoration: none !important;     
   color: #ef423e !important;
+}
+
+li.nav-item{
+  justify-content: space-around;
+  padding: 14px ;
 }
 
 .container{
@@ -148,14 +131,6 @@ nav a:hover {
   margin: 0 auto;
 }
 
-/* button.navbar-item{
-  box-sizing: border-box;
-  border: none;
-  background-color: transparent;
-  line-height: inherit;
-  margin: 0;
-  padding: 0;
-} */
 
 a.navbar-item[type=submit]>li{
   position: relative;
