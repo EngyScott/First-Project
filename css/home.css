@@ -99,11 +99,6 @@ input.navbar-item {
  
 }
 
-/* ul.nav-items{
-  display: flex;
-  justify-content: space-around;
-} */
-
 a.nav-link {
   display: inline-flex;
   font-size: 12px;
@@ -161,12 +156,14 @@ a.login{
 .dropdown:hover .dropdown-menu {display: flex;}
 
 div.d-flex{
-  width: 100%;
-  height: 30%;
+  width: 100% !important;
+  max-height: 30%;
   margin: 0;
   background-color: #fff;
-  border: none;
-  outline-style: none;
+  float: left;
+  overflow: hidden;
+  justify-content: flex-start;
+  /* align-content: center; */
 }
 
 .dropdown-menu{
@@ -174,13 +171,27 @@ div.d-flex{
   flex-flow: column;
   flex-wrap: wrap;
   padding: 15px 20px; 
-  justify-content: space-around;
-  align-content: center;
+  /* justify-content: space-around;
+  align-content: center; */
+  border: none !important;
+  border-top: 1px solid #eee;
+  outline-style: none !important;
+  /* width: 100%; */
+  /* height: 100%; */
+  float: left;
 }
 
 li.dropdown-item>a.nav-link{
   line-height: 18px;
   font-weight: 200;
+}
+
+.navbar-toggler-icon{
+  height: 15px !important;
+  width: 15px !important;
+  float: left !important;
+  justify-self: flex-start !important;
+  margin-left: 0;
 }
 
 
@@ -189,7 +200,7 @@ li.dropdown-item>a.nav-link{
 }
 
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .medium-hide{
     display: none;
   }
@@ -209,7 +220,22 @@ li.dropdown-item>a.nav-link{
 
 
 
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
 
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
 
 
 
